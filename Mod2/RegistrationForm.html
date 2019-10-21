@@ -8,11 +8,27 @@
 </head>
 <body>
     <form action="http://www.webucator.com/course-demos/htm101/process-form.cfm" method="post">
-        Username: <input type="text" name="username" id="username"><br>
-        Password: <input type="password" name="pw" id="pw"><br>
+        Username: <br>
+        <input type="text" name="username" id="username"><br>
+        Password: <br>
+        <input type="password" name="pw" id="pw"><br>
         <input type="hidden" name="emailMe" id="emailMe" value="pmirmida@gmail.com">
+        Gender: <br>
+        Male <input type="radio" name="Gender" id="genderm" value="m"><br>
+        Female <input type="radio" name="Gender" id="genderf" value="f"><br>
+        Terms: <input type="checkbox" name="terms" id="terms"><br>
+        <select name="referal" id="referal">
+            <option value="0">--Please choose--</option>
+            <option value="wom">Word of Mouth</option>
+            <optgroup label="Search Engine">
+                <option value="Google">Google</option>
+                <option value="Yahoo">Yahoo!</option>
+                <option value="MSN">MSN</option>
+            </optgroup>
+        </select><br>
+        <textarea name="comments" id="comments" cols="03" rows="03"></textarea><br>
         <button type="submit" value="Register">Register</button>
-        <button type="reset" value="Reset">Reset</button>
+        <button type="reset" value="Reset">Reset</button><br>
     </form>
 </body>
 </html>
