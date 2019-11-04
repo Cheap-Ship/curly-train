@@ -7,6 +7,27 @@
     </title>
 </head>
 <body>
-    
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal info</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" pattern="[A-Z][a-z]+\s[A-Z][a-z]+" required><br>
+            Member  <input type="radio" name="membership" id="memb" value="member"><br>
+            On-Member<input type="radio" name="membership" id="onmemb" value="on-member"><br>
+            <label for="email">Email</label>
+            <input type="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Reservation info</legend>
+            <select name="Facility" id="Facility">
+                <option value="Badmington">Badmington</option>
+                <option value="Squash">Squash</option>
+                <option value="Racquetball">Racquetball</option>
+            </select><br>
+            <input type="datetime-local">
+        </fieldset>
+        <input type="checkbox"> I agree to the club’s reservation policy <br>
+        <input type="submit">
+    </form>
 </body>
 </html>
