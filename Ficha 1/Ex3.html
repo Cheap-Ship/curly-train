@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=pt>
+<head>
+    <meta description keywords author>
+    <title>        
+        3.  Formulário
+    </title>
+</head>
+<body>
+    <form action="http://www.webucator.com/course-demos/htm101/process-form.cfm" method="post" target="_blank">
+        <label for="name">Name: </label> <input type="text" name="name" id="name"><br>
+        <fieldset>
+            <legend>Age:</legend>
+            <input type="radio" name="age" id="18" value="<18"> <label for="18"><18 </label>
+            <input type="radio" name="age" id="19-35" value="19-35"> <label for="19-35">19-35 </label>
+            <input type="radio" name="age" id="36-48" value="36-48"> <label for="36-48">36-48 </label> 
+            <input type="radio" name="age" id="49" value=">49"> <label for="49">>49 </label>
+        </fieldset>
+        <label for="prof">Profession: </label> <input type="text" name="prof" id="prof">
+        <label for="country">Country: </label> 
+        <select name="country" id="country">
+            <option value="pt">Portugal</option>
+            <option value="sp">Spain</option>
+            <option value="fr">France</option>
+            <option value="uk">United Kingdom</option>
+            <option value="other">Other</option>
+        </select><br>
+        <fieldset>
+            <legend>Interests:</legend>
+            <input type="checkbox" name="interest" id="photo" value="Photography"> <label for="photo">Photography </label>
+            <input type="checkbox" name="interest" id="music" value="Music"> <label for="music">Music </label>
+            <input type="checkbox" name="interest" id="cine" value="Cinema"> <label for="cine">Cinema </label> 
+            <input type="checkbox" name="interest" id="comp" value="Computers"> <label for="comp">Computers </label>
+        </fieldset>        
+        <label for="how">How did you find about us: </label> <textarea name="how" id="how" cols="50" rows="5"></textarea><br>
+        <button type="submit" value="Register">Register</button>
+    </form>
+</body>
+</html>
