@@ -1,0 +1,22 @@
+#login h1 {
+    font-family: Verdana;
+    text-align: center;
+}
+
+#login form {
+    background-color: white;
+    font-family: Verdana;
+    padding: 1em 1em;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+#login input[type=text], #login input[type=password] {
+    background-color :white;
+    border: none;
+    border-bottom: black solid thin;
+    padding: 1em 1em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    width: 87%;
+}
