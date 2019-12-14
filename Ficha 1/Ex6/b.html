@@ -1,0 +1,37 @@
+<html lang="pt">
+<head>
+    <meta description keywords author>
+    <title>6. b.</title>
+    <script>
+        do
+        {
+            var num = parseInt(prompt("Insira um número maior que 1"));
+            if (num <= 1)
+            {
+                continue;
+            }
+            var print = "2";
+            for (var i = 3; i <= num; i++)
+            {
+                var flag = true;
+                for (var c = 2; c < i; c++)
+                {
+                    if (i % c == 0)
+                    {
+                        flag = false;
+                    }
+                }
+                if (flag)
+                {
+                    print += ", " + i;
+                }
+            }
+        alert(print);
+        }
+        while (num <= 1 && i != num)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

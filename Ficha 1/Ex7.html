@@ -1,0 +1,26 @@
+<html lang="pt">
+<head>
+    <meta description keywords author>
+    <title>7.</title>
+    <script>
+        alert(tabuada(parseInt(prompt("Insira um número"))));
+
+        function tabuada(num)
+        {
+            if (isNaN(num))
+            {
+                num = 1;
+            }
+            var print = "";
+            for (var i = 1; i <= 10; i++)
+            {
+                print += num + " x " + i + " = " + (num*i) + "\n";
+            }
+            return print;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
