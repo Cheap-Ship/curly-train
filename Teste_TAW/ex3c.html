@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert row in a table</title>
+    <script>
+    let btn = document.getElementById("insertRowButton");
+    btn.onclick = function() {InsertRow()}    
+
+    function InsertRow() {
+        let tabela = document.getElementById("sampleTable");
+        let row = document.createElement("tr");
+        let collumn = document.createElement("td");
+        let text = document.createTextNode("NewRow NewCell");
+        collumn.appendChild(text);
+        row.appendChild(collumn);
+        row.appendChild(collumn);
+        tabela.appendChild(row);
+        tabela.appendChild(row);
+    }
+
+    </script>
+</head>
+<body>
+    <table id="sampleTable" border="1">
+    <tr>
+    <td>Row1 cell1</td>
+    <td>Row1 cell2</td>
+    </tr>
+    <tr>
+    <td>Row2 cell1</td>
+    <td>Row2 cell2</td>
+    </tr>
+    </table><br>
+    <input id="insertRowButton" type="button" value="Insert row" onclick="InsertRow()">
+</body>
+</html>

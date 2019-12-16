@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+    }
+
+    .container {
+        align-items: flex-start;
+        height: 10%;
+    }
+
+    .spacer {
+        align-items: center;
+        height: 80%;
+    }
+
+    .container div:nth-of-type(1) {
+        color: white;
+        background-color: red;
+    }
+    .container div:nth-of-type(2) {
+        background-color: yellow;
+    }
+    .container div:nth-of-type(3) {
+        color: white;
+        background-color: green;
+    }
+
+    .footer {
+        color: white;
+        background-color: black;
+        align-items: flex-end;
+        height: 10%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="footer">
+        <div>Footer</div>
+    </div>       
+</body>
+</html>

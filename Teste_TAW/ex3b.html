@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    switch (prompt("Who's there?"))
+    {
+        case null:
+        case "":
+            alert("Canceled");
+            log("Canceled");
+        break;
+
+        case "Admin":
+            switch (prompt("Password?"))
+            {
+                case null:
+                case "":
+                    alert("Canceled");
+                    log("Canceled");
+                break;
+
+                case "TheMaster":
+                    alert("Welcome!");
+                    log("Welcome!");
+                break;
+
+                default:
+                    alert("Wrong password");
+                    log("Wrong password");
+                break;
+            }
+        break;
+
+        default:
+            alert("I don't know you");
+            log("I don't know you");
+        break;
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
